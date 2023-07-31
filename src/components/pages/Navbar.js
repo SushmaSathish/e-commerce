@@ -1,6 +1,7 @@
 import React from 'react';
-import{Container, Navbar,Nav,Button} from 'react-bootstrap'
-const Navigationbar=()=>{
+import{Container, Navbar,Nav} from 'react-bootstrap'
+import CartButton from './navbarcartbutton';
+const Navigationbar=(props)=>{
     return(
      <div>
         <Navbar variant='dark'bg='dark' expand='sm'>
@@ -12,7 +13,7 @@ const Navigationbar=()=>{
             <Nav.Link href="#">About</Nav.Link>
             </Nav>
             <Nav>
-                <Button  variant="secondary">cart<span>1</span></Button>
+            <CartButton onButtonpass ={props.onOpenButton} />
             </Nav>
         </Container>
         </Navbar>

@@ -4,14 +4,15 @@ const Items=(props)=>{
     return(
     <div>
         <h1 className={classes.h1}>MUSIC</h1>
-        {/*props.item.map((items)=>(
+        {props.Item.map((items)=>(
             <div className={classes.item}>
                 <Card style={{width: "18rem", height: "15rem"}}>
                 <Card.Title style={{ color: "black", textAlign: "center", margin: "20px" }}>
                 {items.title}
                 </Card.Title>
+                 <Card.Img src={items.imageUrl} alt="coloring" />
                 <Card.Body>
-                {items.price}₹
+                ₹{items.price}
               <span>
                 <Button
                   variant="primary"
@@ -24,8 +25,8 @@ const Items=(props)=>{
                 </Card.Body>
                 </Card>
                 </div>
-        ))*/}
-        {props.Item.map((items) => (
+        ))}
+        {/*props.Item.map((items) => (
         <div className={classes.item}>
           <Card style={{ width: "18rem", height: "15rem" }}>
             <Card.Title
@@ -51,7 +52,7 @@ const Items=(props)=>{
 
           </Card>
         </div>
-      ))}
+      ))*/}
         <div style={{ color: "skyblue", textAlign: "center" }}>
         <Button
           variant="secondary"
