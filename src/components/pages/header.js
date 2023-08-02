@@ -1,12 +1,11 @@
-import {} from "react-bootstrap";
+import {Card}  from "react-bootstrap"
+import classes from'./header.module.css'
+
 const Header=()=>{
-    
-    return(
-      <div class="card text-center bg-secondary mb-3">
-      <div class="card-body">
-      <h1 class="card-title display-1 font-weight-bold">Generics</h1>
-      </div>
-      </div>
-    )
+return(
+<Card   style={{width:'100%', height:'12rem'}}>
+      <Card.Body    className={classes.cardbody} > <span>The Generics</span>  </Card.Body >
+      </Card>
+)
 }
- export default Header;
+export default Header
