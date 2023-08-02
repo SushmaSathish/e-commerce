@@ -1,6 +1,6 @@
 import {Fragment} from'react'
-import classes from'/modal.module.css'
-import { ReactDOM } from 'react-dom'
+import classes from'./modal.module.css';
+import ReactDOM from 'react-dom';
 const ModalOverlay=(props)=>{
     return(
         <div className={classes.modal}>
@@ -8,11 +8,11 @@ const ModalOverlay=(props)=>{
         </div>  
     )
 }
-const modal=(props)=>{
+const Modal=(props)=>{
     return(
             <Fragment>
-                {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay> ,document.getElementById('modal'))}
+                {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay> ,document.getElementById('overlays'))}
             </Fragment>
     )
 }
-export default modal;
+export default Modal;

@@ -1,6 +1,9 @@
+import React,{useContext} from "react";
 import { Button,Card } from "react-bootstrap";
-import classes from'./images.module.css'
+import classes from'./images.module.css';
+import CartContext from "../contextt/context";
 const Items=(props)=>{
+  const cartctx= useContext(CartContext);
     return(
     <div>
         <h1 className={classes.h1}>MUSIC</h1>
@@ -15,11 +18,13 @@ const Items=(props)=>{
                 ₹{items.price}
               <span>
                 <Button
-                  variant="primary"
+                  variant="info"
+                  style={{ color: "white", textDecorationStyle: "bold" }}
                   as="input"
                   type="submit"
                   value="ADD TO CART"
                   size="sm"
+                  onClick={() => cartctx.addItem({...items,amount:1,id:Math.random().toString(36)})}
                 />
               </span>
                 </Card.Body>
@@ -60,7 +65,7 @@ const Items=(props)=>{
         >
           See the cart
         </Button>
-      </div>{" "}
+      </div>
     </div>
     )
 }

@@ -2,13 +2,13 @@
     width: 15rem ;
     height:118px;
     text-align: center;
-    display: inline-block;
+    margin:none;
   }  
 
   .title {
-    text-align: center;
-
-
+    text-align: center; 
+    display: inline-block;
+    border:1px solid  lightcyan;
   }
 
   .price {
@@ -17,8 +17,15 @@
   .quantity {
     margin-left: 70px;
     display: inline-block;
+    border:1px solid cyan;
+    padding:2px 15px 2px 15px;
   }
 
   .removeButton {
     margin-left:23px;
+  }
+  .button {
+    margin-left:4px;
+    background-color:orangered;
+    border:1px  salmon solid;
   }

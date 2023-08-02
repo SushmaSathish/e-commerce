@@ -1,4 +1,4 @@
-import{Card} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import classes from './footer.module.css';
 import Facebook from'../../assets/Facebook.png';
 import youtube from'../../assets/youtube.png';

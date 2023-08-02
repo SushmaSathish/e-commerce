@@ -1,10 +1,12 @@
-import { Fragment } from "react"
+import { Fragment,useContext } from "react"
 import { Button } from "react-bootstrap";
-
+import CartContext from "../contextt/context"
 const CartButton =(props)=>{
-     let quantity =1;
+    const cartctx = useContext(CartContext)
+
+     const quantity = cartctx.totalAmount;
     return (<Fragment>
- <Button  onClick={props.onButtonpass} variant ="dark" style={{border:"1px solid skyblue"}} type="click">Cart {quantity}</Button>
+ <Button   onClick={props.onButtonpass} variant ="dark" style={{border:"1px solid skyblue"}} type="click">Cart {quantity}</Button>
 
     </Fragment>)
 }
