@@ -1,6 +1,5 @@
-import classes from  './Headerforhome.module.css'
-
-import Musicbutton from '../assets/music button.png'
+import classes from  './headerforhome.module.css';
+import Musicbutton from'../../assets/MusicButton.jpeg'
 
 const HeaderForHome = () => {
 

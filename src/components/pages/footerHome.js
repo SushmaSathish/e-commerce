@@ -1,7 +1,7 @@
 
 
-import classes from '../components/page/footer.module.css'
-const Footer = () => {
+import classes from './footer.module.css'
+const FooterHome = () => {
   return (
 
       <div  className={classes.footer1}>
@@ -13,4 +13,4 @@ const Footer = () => {
 
   );
 };
-export default Footer;
+export default FooterHome;
