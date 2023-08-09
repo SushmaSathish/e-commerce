@@ -1,15 +1,23 @@
 .footer1 {
     background-color: rgb(116, 196, 241);
-  margin-top:20px;
+
+  display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
   }
-  .footer1 h1 {
-      color: aliceblue;
-      display:inline-block;
+
+  .h1 {
+    color: aliceblue;
+    display: inline-block;
+    margin-left:140px;
+    font-size:60px;
   }
 
   .img {
-       margin-left:500px;
+    margin-left: 140px;
   }
-  .img img{
-      margin-left:70px;
+  .img img {
+    margin-left: 70px;
   }

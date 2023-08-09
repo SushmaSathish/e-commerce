@@ -1,4 +1,5 @@
-import React,{useState} from "react";
+import React,{useState
+} from "react";
 import Navigationbar from "../pages/Navbar";
 import Header from "../pages/header";
 import Footer from '../pages/footer';
@@ -54,7 +55,7 @@ function Store() {
     return (
   
         <CartProvider>
-          {cartshow && <Cart onclosebutton={CartHideHandler}></Cart>}
+          {cartshow && <Cart onCloseButton={CartHideHandler}></Cart>}
           <Navigationbar onOpenButton={CartshowHandler}></Navigationbar>
           <Header></Header>
   

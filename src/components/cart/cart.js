@@ -42,8 +42,8 @@ const Cart=(props)=>{
                   
                   </Card>
                   <b>
-                  <span className={classes.price}>{item.amount}</span>
-                  <span className={classes.quantity}>{item.quantity} </span>
+                  <span className={classes.price}>Rs.{item.price}</span>
+                  <span className={classes.quantity}>{item.amount} </span>
                
                   <Button  className={classes.button}
                     onClick={() => IncreaseAndDecrease(item, -1)}
@@ -86,7 +86,7 @@ const Cart=(props)=>{
           as="input"
           size="sm"
           type="submit"
-          value="X"onClick={props.onclosebutton}></Button>
+          value="X"onClick={props.onCloseButton}></Button>
             </div>
         </Modal>
     )

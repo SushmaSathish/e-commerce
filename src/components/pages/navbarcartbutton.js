@@ -6,7 +6,7 @@ const CartButton =(props)=>{
 
      const quantity = cartctx.totalAmount;
     return (<Fragment>
- <Button   onClick={props.onButtonpass} variant ="dark" style={{border:"1px solid skyblue"}} type="click">Cart {quantity}</Button>
+     <Button   onClick={props.onButtonpass} variant ="dark" style={{border:"1px solid skyblue"}} type="click">Cart {quantity}</Button>
 
     </Fragment>)
 }
