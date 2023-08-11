@@ -1,6 +1,7 @@
 import React, { useState, useCallback,useEffect } from 'react';
 import MovieList from './movieList';
 import './AppAPI.css';
+import FetchMoveiForm from './movieForm';
 
 const Appapi = () => {
     const[movie,setmovie]=useState([])
@@ -47,6 +48,9 @@ const Appapi = () => {
   }
   return (
     <React.Fragment>
+        <section>
+          <FetchMoveiForm/>
+        </section>
         <section>
         <button onClick={fetchmoviehandle}>Fetchmovie</button>
         </section>
