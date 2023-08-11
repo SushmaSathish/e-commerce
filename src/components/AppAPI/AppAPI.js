@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback,useEffect } from 'react';
 import MovieList from './movieList';
 import './AppAPI.css';
+
 const Appapi = () => {
     const[movie,setmovie]=useState([])
     const[isloading,setisloading]=useState(false)
     const [error,setError] = useState(null)
-
-    async function fetchmoviehandle(){
+    
+    const fetchmoviehandle=useCallback( async  ()=>{
         setisloading(true);
         setError(null);
         try{
@@ -30,7 +31,10 @@ const Appapi = () => {
           setError(error.message)
         }
         setisloading(false)
-        }
+        },[])
+        useEffect (()=>{
+          fetchmoviehandle()
+          },[fetchmoviehandle])
         let content = <p>found no movies</p>;
   if (movie.length > 0) {
     content = <MovieList movies={movie} />;
