@@ -82,11 +82,11 @@ const Cart=(props)=>{
         PURCHASE
         </Button>
         <Button variant="danger"
-        style={{ margin: " 2rem auto auto 5rem " }}
+        style={{ margin: " 2rem auto auto 2rem " }}
           as="input"
           size="sm"
           type="submit"
-          value="X"onClick={props.onCloseButton}></Button>
+          value="close"onClick={props.onCloseButton}></Button>
             </div>
         </Modal>
     )

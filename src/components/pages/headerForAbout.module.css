@@ -22,6 +22,7 @@
     font-weight: bold;
   
     font-family: Georgia, "Times New Roman", Times, serif;
+    background-color:aqua;
   }
   
   .img {
@@ -44,4 +45,5 @@
     padding-top: none;
   
     display: inline-flex;
+    background-color:rgb(24, 127, 217);
   }

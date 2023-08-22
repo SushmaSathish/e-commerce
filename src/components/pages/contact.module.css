@@ -1,0 +1,32 @@
+.contact {
+
+    border:2px solid   cyan;
+
+    background-color: rgba(146, 144, 144, 0.868);
+
+    margin: 40px  30% 50px  30%;
+
+    border-radius: 60px;
+
+    padding:20px  80px 20px 120px;
+
+    color:lavenderblush;
+
+}
+
+
+
+
+.contact button {
+
+    margin-top:20px;
+
+    background-color:grey;
+
+    border-radius: 26px  ;
+
+    border:1px solid white;
+
+    color:white;
+
+}

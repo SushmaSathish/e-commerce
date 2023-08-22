@@ -1,19 +1,14 @@
 import React from "react";
-
-
-
-
 import { Button } from "react-bootstrap";
-
-
-
-
+import HeaderForHome from "./headerforhome";
 function HomeBody() {
-
+  
   return (
-
+     <>
+      <HeaderForHome/>
+     
     <div>
-
+       
       <div style={{ marginLeft: "200px" ,marginBottom:'25px'}}>
 
         <table >
@@ -47,10 +42,6 @@ function HomeBody() {
             </spna>
 
           </tr>
-
-
-
-
           <tr  style={{borderBottom:'0.5px solid black'}}>
 
             <th>JUL19,</th>
@@ -217,6 +208,7 @@ function HomeBody() {
       </div>
 
     </div>
+    </>
 
   );
 

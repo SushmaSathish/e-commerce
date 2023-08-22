@@ -12,6 +12,7 @@ function CartHeader(props) {
         >
           ITEM
         </h5>
+
         <h5 style={{ display: "inline-block", margin: "auto 25px auto 10px" }}>
           PRICE
         </h5>
